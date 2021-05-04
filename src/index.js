@@ -74,6 +74,5 @@ app.delete('/todos/:id', existUsername, existID, (request, response) => {
     return response.send();
 });
 
-app.listen(3000, () => {
-    console.log("Rodando na porta 3000");
-})
+module.exports = app;
+
